@@ -5,6 +5,7 @@ class Song < ActiveRecord::Base
   def get_genre_name
     self.genres.map do |g|
       g.name
+    end
   end
 
   def drake_made_this
